@@ -1,0 +1,93 @@
+.integrantes-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.integrante-card {
+  width: 100%;
+  max-width: 340px;
+  border-radius: 24px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.integrante-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+}
+
+.integrante-icon-wrapper {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.integrante-avatar-circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent-green-light) 0%, var(--accent-yellow-light) 100%);
+  color: var(--accent-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--surface-color);
+  box-shadow: 0 6px 18px rgba(22, 163, 74, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.integrante-card:hover .integrante-avatar-circle {
+  transform: scale(1.06);
+}
+
+.integrante-badge-mini {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--accent-yellow-gradient, var(--accent-yellow));
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  border: 2px solid var(--surface-color);
+}
+
+.integrante-info {
+  width: 100%;
+}
+
+.integrante-info h3 {
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.role {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+}
+
+.integrante-tag {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border-radius: 50px;
+  background-color: var(--surface-alt);
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 500;
+  border: 1px solid var(--border-color);
+}

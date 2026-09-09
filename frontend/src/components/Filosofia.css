@@ -1,0 +1,117 @@
+.filosofia-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  margin-bottom: 4rem;
+}
+
+.filosofia-card {
+  padding: 3rem 2.5rem;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.filosofia-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.filosofia-card:first-child {
+  background: linear-gradient(145deg, var(--surface-color) 0%, var(--surface-alt) 100%);
+  border-left: 4px solid var(--accent-green);
+}
+
+.filosofia-card:last-child {
+  background: linear-gradient(145deg, var(--surface-color) 0%, var(--surface-accent) 100%);
+  border-left: 4px solid var(--accent-yellow);
+}
+
+.icon-wrapper-small {
+  width: 64px;
+  height: 64px;
+  background-color: var(--accent-green-light);
+  color: var(--accent-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.15);
+}
+
+.filosofia-card:last-child .icon-wrapper-small {
+  background-color: var(--accent-yellow-light);
+  color: var(--accent-yellow-hover);
+  box-shadow: 0 4px 12px rgba(234, 179, 8, 0.2);
+}
+
+.filosofia-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+  color: var(--text-primary);
+}
+
+.filosofia-card p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.8rem;
+}
+
+.valor-item {
+  padding: 1.8rem;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.valor-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-yellow);
+  box-shadow: var(--shadow-md);
+}
+
+.valor-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.valor-icon {
+  color: var(--accent-yellow);
+  fill: var(--accent-yellow-light);
+}
+
+.valor-header h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.valor-item p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.mt-4 { margin-top: 4rem; }
+.mb-2 { margin-bottom: 2rem; }
+.text-center { text-align: center; }
+
+@media (max-width: 768px) {
+  .filosofia-grid {
+    grid-template-columns: 1fr;
+  }
+}
