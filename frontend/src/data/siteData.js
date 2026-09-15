@@ -43,23 +43,58 @@ export const siteData = {
   productos: [
     {
       id: 1,
-      name: "Postres de Maracuyá",
-      description: "Deliciosos postres artesanales que equilibran el dulce con la acidez perfecta.",
-      icon: "cake",
+      name: "Postre de Maracuyá (95g)",
+      presentacion: "95g",
+      price: "$4.000",
+      description: "Delicioso postre artesanal en porción individual, elaborado con capas suaves y pulpa 100% natural de maracuyá que equilibra la dulzura y la acidez perfecta.",
+      caracteristicas: [
+        "Presentación individual de 95 gramos",
+        "Elaborado con fruta fresca cultivada en Pulí",
+        "Equilibrio exacto entre textura cremosa y toque cítrico"
+      ],
+      badge: "Porción Personal",
       image: "images/postres_maracuya_real.png"
     },
     {
       id: 2,
-      name: "Arequipe Exótico",
-      description: "Un giro innovador al tradicional arequipe, infusionado con maracuyá.",
-      icon: "flame",
-      image: "images/arequipe_frasco_real.png"
+      name: "Postre de Maracuyá (125g)",
+      presentacion: "125g",
+      price: "$6.000",
+      description: "Nuestra porción más generosa de postre de maracuyá, con mayor contenido de pulpa natural, ideal para disfrutar de una experiencia gourmet más completa.",
+      caracteristicas: [
+        "Presentación ampliada de 125 gramos",
+        "Textura suave con glaseado y semillas naturales",
+        "Rico en vitamina C y antioxidantes naturales"
+      ],
+      badge: "Porción Especial",
+      image: "images/postres_maracuya_real.png"
     },
     {
       id: 3,
-      name: "Salsas Artesanales",
-      description: "Ideales para acompañar tus platos favoritos con un toque tropical.",
-      icon: "sparkles",
+      name: "Mermelada de Maracuyá",
+      presentacion: "Frasco",
+      price: "$15.000",
+      description: "Exquisita mermelada y salsa dulce concentrada a fuego lento con el mejor maracuyá de la región. Perfecta para untar en panes, tostadas, galletas y repostería.",
+      caracteristicas: [
+        "Frasco de vidrio tradicional con sello de calidad",
+        "Sin aditivos artificiales ni colorantes químicos",
+        "Gran versatilidad para postres y desayunos"
+      ],
+      badge: "Frasco Familiar",
+      image: "images/arequipe_frasco_real.png"
+    },
+    {
+      id: 4,
+      name: "Arequipe con Maracuyá",
+      presentacion: "Tradicional",
+      price: "$6.000",
+      description: "Una fusión irresistible entre la dulzura cremosa del tradicional arequipe y el aroma exótico del maracuyá, creando una combinación dulce y cítrica única.",
+      caracteristicas: [
+        "Receta artesanal exclusiva de Sabores del Paraíso",
+        "Consistencia untable y textura aterciopelada",
+        "Sabor equilibrado que no empalaga"
+      ],
+      badge: "Receta Exclusiva",
       image: "images/salsas_maracuya_real.jpg"
     }
   ],
