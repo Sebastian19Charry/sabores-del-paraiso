@@ -1,4 +1,4 @@
-import { Phone, Mail, Clock, QrCode, Download } from 'lucide-react';
+import { Phone, Mail, Clock } from 'lucide-react';
 import './Footer.css';
 
 export default function Footer() {
@@ -14,18 +14,6 @@ export default function Footer() {
             <p style={{ marginTop: '0.4rem', fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
               Horario: Lunes a Domingo de 8:00 AM a 8:00 PM
             </p>
-          </div>
-          <div className="footer-qr-section">
-            <div className="footer-qr-card">
-              <img src="./images/qr_menu.png" alt="Código QR Sabores del Paraíso" className="footer-qr-img" />
-              <div className="footer-qr-text">
-                <span className="footer-qr-title"><QrCode size={15} /> Escanéanos</span>
-                <p className="footer-qr-desc">Abre el menú en tu celular</p>
-                <a href="./images/qr_menu.png" download="QR_Sabores_Del_Paraiso.png" className="footer-qr-download">
-                  <Download size={13} /> Descargar QR
-                </a>
-              </div>
-            </div>
           </div>
 
           <div className="footer-contact-info">
